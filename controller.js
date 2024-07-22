@@ -69,7 +69,6 @@ exports.signup = async (req, res) => {
 
       // Send OTP to user's email
       sendGmail(email, 'Signup OTP', `Your OTP is ${otp}`);
-
       return res.status(200).json({ message: 'OTP sent to email.' });
     }
 
