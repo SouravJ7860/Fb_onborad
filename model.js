@@ -16,7 +16,6 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   friends: [friendSchema],
   profileImage: { type: String },
-  profileImage: { type: String },
   resetPasswordToken: { type: String },
   resetPasswordExpires: { type: Date }, 
   verified: {type: Boolean, default: false},
